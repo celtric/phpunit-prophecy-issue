@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout
       - run: composer install
-      - run: vendor/bin/phpunit ErrorTest.php --report-useless-tests
+      - run: vendor/bin/phpunit ErrorTest.php --fail-on-risky
